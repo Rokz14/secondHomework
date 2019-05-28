@@ -3,7 +3,6 @@
     header {
         height: 75px;
         font-size: 20px;
-        background: lightgrey;
         margin: 10px;
         display: grid;
         grid-template-columns: 3fr 2fr;
@@ -15,6 +14,7 @@
     .brand {
         background: LightSalmon;
         grid-area: brand;
+        text-align: center;
     }
     nav {
         background: LightPink;
@@ -27,7 +27,6 @@
     main {
         height: 600px;
         font-size: 20px;
-        background: lightgrey;
         margin: 10px;
         display: grid;
         grid-template-columns: 1fr;
@@ -37,46 +36,49 @@
           "feature"
           "ad"
           "listing";
-        grid-template-rows: 15% 25% 15% 45%;
+        grid-template-rows: 15% 15% 10% 55%;
     }
     .hero_image {
         display: none;
-        background: LightSkyBlue;
         grid-area: img;
+        text-align: center;
     }
     .hero_text {
-        background: LightPink;
         grid-area: text;
+        text-align: center;
+        font-size: 25px;
     }
     .ad {
-        background: lightskyblue;
         grid-area: ad;
+        font-size: 20px;
+        color: blue;
+        text-align: center;
     }
     .article_feature {
-        background: lightcoral;
         grid-area: feature;
+        font-size: 20px;
+        color: grey;
+        text-align: center;
     }
     .article_listing {
-        background: lightgreen;
         grid-area: listing;
+        text-align: justify;
+        font-size: 12px;
     }
     .sidebar {
         display: none;
-        background: lightpink;
         grid-area: sidebar;
     } 
     footer {
         height: auto;
         font-size: 20px;
-        background: teal;
         margin: 10px;
     }
-} 
+}
 @media (min-width: 576px) { 
     header {
         height: 100px;
         font-size: 20px;
-        background: lightgrey;
         margin: 10px;
         display: grid;
         grid-template-columns: 1fr 5fr 1fr;
@@ -94,7 +96,6 @@
     main {
         height: 1000px;
         font-size: 20px;
-        background: lightgrey;
         margin: 10px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -109,33 +110,51 @@
         grid-template-rows: 10% 7% 23% 23% 23% 14%;
     }
     .hero_image {
-        background: LightSkyBlue;
         grid-area: img;
     }
     .hero_text {
-        background: LightPink;
         grid-area: text;
+        text-align: center;
+        font-size: 25px;
     }
     .ad {
-        background: lightskyblue;
         grid-area: ad;
+        font-size: 20px;
+        color: blue;
+        text-align: center;
+        padding: 30%;
     }
     .article_feature {
-        background: lightcoral;
         grid-area: feature;
+        font-size: 25px;
+        color: grey;
+        text-align: center;
+        padding: 20px;
     }
     .article_listing {
-        background: lightgreen;
         grid-area: listing;
+        text-align: justify;
+        font-size: 17px;
+        padding: 10px;
     }
     .sidebar {
-        background: lightpink;
         grid-area: sidebar;
+        font-size: 30px;
+        color: red;
+        text-align: center;
     } 
+    .picture {
+        max-width: 100%;
+        max-height:100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
     footer {
         height: 50px;
-        font-size: 20px;
-        background: teal;
+        font-size: 10px;
         margin: 10px;
     }
 }
@@ -143,7 +162,6 @@
     header {
         height: 100px;
         font-size: 20px;
-        background: lightgrey;
         margin: 10px;
         display: grid;
         grid-template-columns: 1fr 5fr 1fr;
@@ -151,6 +169,7 @@
     }
     .brand {
         background: LightSalmon;
+        text-align: center;
     }
     nav {
         background: LightPink;
@@ -161,7 +180,6 @@
     main {
         height: 1000px;
         font-size: 20px;
-        background: lightgrey;
         margin: 10px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -173,33 +191,55 @@
           "feature listing listing sidebar";
     }
     .hero_image {
-        background: LightSkyBlue;
         grid-area: img;
+        text-align: center;
     }
     .hero_text {
-        background: LightPink;
         grid-area: text;
+        text-align: center;
+        font-size: 40px;
+        padding: 15%;
     }
     .ad {
-        background: lightskyblue;
         grid-area: ad;
+        font-size: 30px;
+        color: blue;
+        text-align: center;
+        padding: 30%;
     }
     .article_feature {
-        background: lightcoral;
         grid-area: feature;
+        font-size: 40px;
+        color: grey;
+        text-align: center;
+        padding: 20px;
     }
     .article_listing {
-        background: lightgreen;
         grid-area: listing;
+        text-align: justify;
+        font-size: 17px;
+        padding: 20px;
     }
     .sidebar {
-        background: lightpink;
         grid-area: sidebar;
-    } 
+        font-size: 30px;
+        color: red;
+        text-align: center;
+        padding: 2px;
+    }
+    .picture {
+        max-width: 100%;
+        max-height:200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 50%;
+    }
     footer {
         height: 50px;
         font-size: 20px;
-        background: teal;
         margin: 10px;
     }
 }
